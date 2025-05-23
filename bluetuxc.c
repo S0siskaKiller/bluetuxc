@@ -89,6 +89,8 @@ int bluetux() {
        system(command);
        scanf(" %c", &pause);
        if ( pause == 'q' ) {
+	       system("tput sgr0");
+	       system("clear");
 	       exit(0);
        }
 
