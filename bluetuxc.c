@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <iso646.h>
 #include <unistd.h>
 #include <string.h>
 
@@ -97,7 +98,7 @@ int bluetux() {
 }
 
 int main(int argc, char **argv) {
-	if(strcmp(argv[0], "-l") == 0) {
+	if( argc > 1 and strcmp(argv[1], "-l") == 0) {
 		printf("Avaliable color schemes:\n");
 		printf("pink\n");
 		printf("yellow\n");
